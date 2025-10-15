@@ -2,6 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import profileImage from '@/assets/profile.jpg';
+import { StarryBackground } from '@/components/StarryBackground';
 
 export const Hero = () => {
   const { language } = useLanguage();
@@ -40,8 +41,9 @@ export const Hero = () => {
   };
 
   return (
-    <section id="intro" className="min-h-screen flex items-center justify-center px-4 pt-20">
-      <div className="container mx-auto">
+    <section id="intro" className="min-h-screen flex items-center justify-center px-4 pt-20 relative overflow-hidden">
+      <StarryBackground />
+      <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 animate-fade-in">

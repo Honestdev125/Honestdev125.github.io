@@ -2,9 +2,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { skills } from '@/data/skills';
 import { Card, CardContent } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export const TechStack = () => {
   const { language } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation(0.2);
 
   const content = {
     ja: {
@@ -32,7 +34,13 @@ export const TechStack = () => {
   const categories = ['frontend', 'backend', 'infrastructure', 'other'] as const;
 
   return (
-    <section id="tech" className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section 
+      ref={ref}
+      id="tech" 
+      className={`min-h-screen flex items-center justify-center px-4 py-20 bg-section-light transition-all duration-1000 ${
+        isVisible ? 'animate-scroll-fade-in' : 'opacity-0'
+      }`}
+    >
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

@@ -6,9 +6,11 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent } from '@/components/ui/card';
 import { Mail, MessageSquare, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export const Contact = () => {
   const { language } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation(0.2);
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -71,7 +73,13 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section 
+      ref={ref}
+      id="contact" 
+      className={`min-h-screen flex items-center justify-center px-4 py-20 bg-section-light transition-all duration-1000 ${
+        isVisible ? 'animate-scroll-fade-in' : 'opacity-0'
+      }`}
+    >
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

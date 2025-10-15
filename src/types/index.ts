@@ -9,7 +9,7 @@ export interface Project {
   tags: string[];
   demoUrl?: string;
   sourceUrl?: string;
-  image?: string;
+  image: string;
   details?: {
     ja: string;
     en: string;

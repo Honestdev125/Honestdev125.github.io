@@ -1,4 +1,29 @@
 import { Project } from '@/types';
+import erpImage from '@/assets/projects/erp-system.jpg';
+import elearningImage from '@/assets/projects/elearning.jpg';
+import iotFactoryImage from '@/assets/projects/iot-factory.jpg';
+import medicalRecordsImage from '@/assets/projects/medical-records.jpg';
+import beautySalonImage from '@/assets/projects/beauty-salon.jpg';
+import realEstateImage from '@/assets/projects/real-estate.jpg';
+import supplyChainImage from '@/assets/projects/supply-chain.jpg';
+import courseMarketplaceImage from '@/assets/projects/course-marketplace.jpg';
+import smartHomeImage from '@/assets/projects/smart-home.jpg';
+import telemedicineImage from '@/assets/projects/telemedicine.jpg';
+import beautyEcommerceImage from '@/assets/projects/beauty-ecommerce.jpg';
+import corporateCommImage from '@/assets/projects/corporate-comm.jpg';
+import learningGamesImage from '@/assets/projects/learning-games.jpg';
+import predictiveMaintenanceImage from '@/assets/projects/predictive-maintenance.jpg';
+import hospitalBedsImage from '@/assets/projects/hospital-beds.jpg';
+import spaManagementImage from '@/assets/projects/spa-management.jpg';
+import financialAnalyticsImage from '@/assets/projects/financial-analytics.jpg';
+import virtualClassroomImage from '@/assets/projects/virtual-classroom.jpg';
+import warehouseImage from '@/assets/projects/warehouse.jpg';
+import patientPortalImage from '@/assets/projects/patient-portal.jpg';
+import beautyInfluencerImage from '@/assets/projects/beauty-influencer.jpg';
+import hrSystemImage from '@/assets/projects/hr-system.jpg';
+import studentAssessmentImage from '@/assets/projects/student-assessment.jpg';
+import energyManagementImage from '@/assets/projects/energy-management.jpg';
+import pharmacyImage from '@/assets/projects/pharmacy.jpg';
 
 export const projects: Project[] = [
   {
@@ -14,7 +39,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発・アーキテクチャ設計',
       en: 'Full-stack development & Architecture design'
-    }
+    },
+    image: erpImage
   },
   {
     id: '2',
@@ -29,7 +55,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発リード',
       en: 'Frontend Development Lead'
-    }
+    },
+    image: elearningImage
   },
   {
     id: '3',
@@ -44,7 +71,8 @@ export const projects: Project[] = [
     role: {
       ja: 'バックエンド開発・IoT統合',
       en: 'Backend Development & IoT Integration'
-    }
+    },
+    image: iotFactoryImage
   },
   {
     id: '4',
@@ -59,7 +87,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発・セキュリティ担当',
       en: 'Full-stack Development & Security'
-    }
+    },
+    image: medicalRecordsImage
   },
   {
     id: '5',
@@ -74,7 +103,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: beautySalonImage
   },
   {
     id: '6',
@@ -89,7 +119,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
-    }
+    },
+    image: realEstateImage
   },
   {
     id: '7',
@@ -104,7 +135,8 @@ export const projects: Project[] = [
     role: {
       ja: 'バックエンド開発・AI統合',
       en: 'Backend Development & AI Integration'
-    }
+    },
+    image: supplyChainImage
   },
   {
     id: '8',
@@ -119,7 +151,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: courseMarketplaceImage
   },
   {
     id: '9',
@@ -134,7 +167,8 @@ export const projects: Project[] = [
     role: {
       ja: 'モバイルアプリ開発',
       en: 'Mobile App Development'
-    }
+    },
+    image: smartHomeImage
   },
   {
     id: '10',
@@ -149,7 +183,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: telemedicineImage
   },
   {
     id: '11',
@@ -164,7 +199,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
-    }
+    },
+    image: beautyEcommerceImage
   },
   {
     id: '12',
@@ -179,7 +215,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: corporateCommImage
   },
   {
     id: '13',
@@ -194,7 +231,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
-    }
+    },
+    image: learningGamesImage
   },
   {
     id: '14',
@@ -209,7 +247,8 @@ export const projects: Project[] = [
     role: {
       ja: 'データサイエンス・バックエンド開発',
       en: 'Data Science & Backend Development'
-    }
+    },
+    image: predictiveMaintenanceImage
   },
   {
     id: '15',
@@ -224,7 +263,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: hospitalBedsImage
   },
   {
     id: '16',
@@ -239,7 +279,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: spaManagementImage
   },
   {
     id: '17',
@@ -254,7 +295,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
-    }
+    },
+    image: financialAnalyticsImage
   },
   {
     id: '18',
@@ -269,7 +311,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: virtualClassroomImage
   },
   {
     id: '19',
@@ -284,7 +327,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: warehouseImage
   },
   {
     id: '20',
@@ -299,7 +343,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: patientPortalImage
   },
   {
     id: '21',
@@ -314,7 +359,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: beautyInfluencerImage
   },
   {
     id: '22',
@@ -329,7 +375,8 @@ export const projects: Project[] = [
     role: {
       ja: 'バックエンド開発',
       en: 'Backend Development'
-    }
+    },
+    image: hrSystemImage
   },
   {
     id: '23',
@@ -344,7 +391,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: studentAssessmentImage
   },
   {
     id: '24',
@@ -359,7 +407,8 @@ export const projects: Project[] = [
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
-    }
+    },
+    image: energyManagementImage
   },
   {
     id: '25',
@@ -374,6 +423,7 @@ export const projects: Project[] = [
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
-    }
+    },
+    image: pharmacyImage
   }
 ];

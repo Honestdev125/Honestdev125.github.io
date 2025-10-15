@@ -48,11 +48,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        section: {
+          light: "hsl(var(--section-light))",
+          "light-foreground": "hsl(var(--section-light-foreground))",
+        },
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-accent": "var(--gradient-accent)",
         "gradient-dark": "var(--gradient-dark)",
+        "gradient-light": "var(--gradient-light)",
       },
       boxShadow: {
         glow: "var(--shadow-glow)",
@@ -92,6 +97,14 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-20px)" },
         },
+        "scroll-fade-in": {
+          from: { opacity: "0", transform: "translateY(40px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        "scroll-fade-out": {
+          from: { opacity: "1", transform: "translateY(0)" },
+          to: { opacity: "0", transform: "translateY(-40px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -101,6 +114,8 @@ export default {
         "slide-in": "slide-in 0.5s ease-out",
         "glow-pulse": "glow-pulse 2s ease-in-out infinite",
         float: "float 6s ease-in-out infinite",
+        "scroll-fade-in": "scroll-fade-in 0.8s ease-out forwards",
+        "scroll-fade-out": "scroll-fade-out 0.6s ease-out forwards",
       },
       fontFamily: {
         sans: ["Inter", "Noto Sans JP", "system-ui", "sans-serif"],

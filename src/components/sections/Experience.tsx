@@ -2,9 +2,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { experiences } from '@/data/experiences';
 import { Card, CardContent } from '@/components/ui/card';
 import { Briefcase, Users, CheckCircle2 } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 export const Experience = () => {
   const { language } = useLanguage();
+  const { ref, isVisible } = useScrollAnimation(0.2);
 
   const content = {
     ja: {
@@ -18,7 +20,13 @@ export const Experience = () => {
   };
 
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section 
+      ref={ref}
+      id="experience" 
+      className={`min-h-screen flex items-center justify-center px-4 py-20 bg-section-light transition-all duration-1000 ${
+        isVisible ? 'animate-scroll-fade-in' : 'opacity-0'
+      }`}
+    >
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

@@ -5,12 +5,23 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Code } from 'lucide-react';
+import { ProjectModal } from '@/components/ProjectModal';
+import { Project } from '@/types';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 type FilterType = 'all' | 'enterprise' | 'education' | 'industry' | 'medical' | 'beauty' | 'other';
 
 export const Projects = () => {
   const { language } = useLanguage();
   const [filter, setFilter] = useState<FilterType>('all');
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { ref, isVisible } = useScrollAnimation(0.2);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
 
   const content = {
     ja: {
@@ -52,8 +63,15 @@ export const Projects = () => {
     : projects.filter(p => p.field === filter);
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto">
+    <>
+      <section 
+        ref={ref}
+        id="projects" 
+        className={`min-h-screen flex items-center justify-center px-4 py-20 transition-all duration-1000 ${
+          isVisible ? 'animate-scroll-fade-in' : 'opacity-0'
+        }`}
+      >
+        <div className="container mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -84,9 +102,19 @@ export const Projects = () => {
           {filteredProjects.map((project, index) => (
             <Card
               key={project.id}
-              className="group bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in-up overflow-hidden"
+              onClick={() => handleProjectClick(project)}
+              className="group bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in-up overflow-hidden cursor-pointer"
               style={{ animationDelay: `${index * 50}ms` }}
             >
+              {/* Project Screenshot */}
+              <div className="aspect-video bg-muted overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
               <CardHeader>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">
                   {project.title}
@@ -119,17 +147,21 @@ export const Projects = () => {
                 )}
 
                 {/* Links */}
-                <div className="flex gap-2 pt-2">
+                <div className="flex gap-2 pt-2" onClick={(e) => e.stopPropagation()}>
                   {project.demoUrl && (
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      {content[language].demo}
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        {content[language].demo}
+                      </a>
                     </Button>
                   )}
                   {project.sourceUrl && (
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Code className="h-4 w-4 mr-2" />
-                      {content[language].source}
+                    <Button size="sm" variant="outline" className="flex-1" asChild>
+                      <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer">
+                        <Code className="h-4 w-4 mr-2" />
+                        {content[language].source}
+                      </a>
                     </Button>
                   )}
                 </div>
@@ -145,7 +177,14 @@ export const Projects = () => {
             </p>
           </div>
         )}
-      </div>
-    </section>
+        </div>
+      </section>
+
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+    </>
   );
 };
