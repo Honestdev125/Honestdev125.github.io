@@ -68,7 +68,7 @@ export const Projects = () => {
         ref={ref}
         id="projects" 
         className={`min-h-screen flex items-center justify-center px-4 py-20 transition-all duration-1000 ${
-          isVisible ? 'animate-scroll-fade-in' : 'opacity-0'
+          isVisible ? 'animate-scroll-fade-in' : 'opacity-1'
         }`}
       >
         <div className="container mx-auto">
