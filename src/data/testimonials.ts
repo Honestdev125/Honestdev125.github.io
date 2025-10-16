@@ -80,18 +80,5 @@ export const testimonials: Testimonial[] = [
       ja: 'フロントエンドだけでなくバックエンドの知識も深く、API設計やデータベース設計において的確なアドバイスをいただきました。真のフルスタックエンジニアです。',
       en: 'Deep knowledge not only in frontend but also backend. Provided accurate advice on API and database design. A true full-stack engineer.'
     }
-  },
-  {
-    id: '6',
-    name: 'Anonymous Client',
-    role: {
-      ja: '経営者',
-      en: 'Business Owner'
-    },
-    content: {
-      ja: 'ビジネス視点を持ったエンジニアです。技術的な実装だけでなく、ビジネス目標の達成を常に意識して開発を進めてくれました。',
-      en: 'An engineer with a business perspective. Not just technical implementation, but always conscious of achieving business goals.'
-    },
-    anonymous: true
   }
 ];

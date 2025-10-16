@@ -53,33 +53,33 @@ export const TechStack = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {categories.map((category, index) => {
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          {categories.map((category, categoryIndex) => {
             const categorySkills = skills.filter(s => s.category === category);
             return (
               <Card
                 key={category}
-                className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 animate-fade-in-up"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 hover:shadow-card hover:scale-105 animate-fade-in-up"
+                style={{ animationDelay: `${categoryIndex * 150}ms` }}
               >
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-bold mb-6 text-accent">
+                <CardContent className="p-4 sm:p-6">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-accent animate-fade-in" style={{ animationDelay: `${categoryIndex * 150 + 100}ms` }}>
                     {content[language].categories[category]}
                   </h3>
-                  <div className="space-y-6">
-                    {categorySkills.map(skill => (
-                      <div key={skill.name} className="space-y-2">
+                  <div className="space-y-4 sm:space-y-6">
+                    {categorySkills.map((skill, skillIndex) => (
+                      <div key={skill.name} className="space-y-2 animate-fade-in" style={{ animationDelay: `${categoryIndex * 150 + skillIndex * 80 + 200}ms` }}>
                         <div className="flex justify-between items-center">
-                          <span className="font-medium text-foreground">
+                          <span className="text-sm sm:text-base font-medium text-foreground">
                             {skill.name}
                           </span>
-                          <span className="text-sm text-muted-foreground">
+                          <span className="text-xs sm:text-sm text-muted-foreground">
                             {skill.level}%
                           </span>
                         </div>
                         <Progress value={skill.level} className="h-2" />
                         {skill.description && (
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-xs sm:text-sm text-muted-foreground">
                             {skill.description[language]}
                           </p>
                         )}

@@ -28,7 +28,7 @@ export const Testimonials = () => {
 
   return (
     <section id="testimonials" className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -40,24 +40,30 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={testimonial.id}
-              className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card animate-fade-in-up"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {testimonials.map((testimonial, index) => {
+            const isLastRow = index >= testimonials.length - 2;
+            const isOddTotal = testimonials.length % 3 === 2;
+            
+            return (
+              <Card
+                key={testimonial.id}
+                className={`bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 hover:shadow-card hover:scale-105 animate-fade-in-up ${
+                  isLastRow && isOddTotal ? 'md:col-span-1 lg:col-span-1' : ''
+                }`}
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
               <CardContent className="p-6 space-y-4">
-                {/* Quote Icon */}
-                <Quote className="h-8 w-8 text-primary/50" />
+                  {/* Quote Icon */}
+                  <Quote className="h-8 w-8 text-primary/50 animate-fade-in" />
 
-                {/* Testimonial Text */}
-                <p className="text-muted-foreground leading-relaxed">
-                  "{testimonial.content[language]}"
-                </p>
+                  {/* Testimonial Text */}
+                  <p className="text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: `${index * 150 + 100}ms` }}>
+                    "{testimonial.content[language]}"
+                  </p>
 
-                {/* Author Info */}
-                <div className="flex items-center gap-3 pt-4 border-t border-border">
+                  {/* Author Info */}
+                  <div className="flex items-center gap-3 pt-4 border-t border-border animate-fade-in" style={{ animationDelay: `${index * 150 + 200}ms` }}>
                   <Avatar className="h-12 w-12">
                     <AvatarImage 
                       src={avatars[index] || avatarAnonymous} 
@@ -83,10 +89,11 @@ export const Testimonials = () => {
                       )}
                     </p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

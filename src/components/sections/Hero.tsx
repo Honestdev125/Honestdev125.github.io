@@ -46,33 +46,34 @@ export const Hero = () => {
       <div className="container mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-6 animate-fade-in">
-            <div className="space-y-2">
+          <div className="space-y-6">
+            <div className="space-y-2 animate-fade-in">
               <p className="text-muted-foreground text-lg">{content[language].greeting}</p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
                   {content[language].name}
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-accent font-medium">
+              <p className="text-lg sm:text-xl md:text-2xl text-accent font-medium">
                 {content[language].title}
               </p>
             </div>
 
-            <p className="text-3xl md:text-4xl font-bold text-foreground">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground animate-fade-in" style={{ animationDelay: '200ms' }}>
               {content[language].catchphrase}
             </p>
 
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl animate-fade-in" style={{ animationDelay: '400ms' }}>
               {content[language].description}
             </p>
 
             {/* Tech Highlights */}
-            <div className="flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Node.js', 'AWS', 'PostgreSQL'].map(tech => (
+            <div className="flex flex-wrap gap-2 sm:gap-3 animate-fade-in" style={{ animationDelay: '600ms' }}>
+              {['React', 'TypeScript', 'Node.js', 'AWS', 'PostgreSQL'].map((tech, index) => (
                 <span
                   key={tech}
-                  className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium"
+                  className="px-3 sm:px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-xs sm:text-sm font-medium hover:scale-110 transition-transform duration-300 animate-fade-in"
+                  style={{ animationDelay: `${800 + index * 100}ms` }}
                 >
                   {tech}
                 </span>
@@ -80,11 +81,11 @@ export const Hero = () => {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4 pt-4 animate-fade-in" style={{ animationDelay: '1300ms' }}>
               <Button
                 size="lg"
                 onClick={() => scrollToSection('projects')}
-                className="bg-gradient-primary hover:opacity-90"
+                className="bg-gradient-primary hover:opacity-90 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               >
                 {content[language].cta}
               </Button>
@@ -92,28 +93,29 @@ export const Hero = () => {
                 size="lg"
                 variant="outline"
                 onClick={() => scrollToSection('contact')}
+                className="hover:scale-105 transition-all duration-300 w-full sm:w-auto"
               >
                 {content[language].contact}
               </Button>
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 pt-4">
-              <Button variant="ghost" size="icon">
+            <div className="flex gap-3 sm:gap-4 pt-4 justify-center sm:justify-start animate-fade-in" style={{ animationDelay: '1500ms' }}>
+              <Button variant="ghost" size="icon" className="hover:scale-110 hover:text-primary transition-all duration-300">
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="hover:scale-110 hover:text-primary transition-all duration-300">
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="hover:scale-110 hover:text-primary transition-all duration-300">
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
           </div>
 
           {/* Right Content */}
-          <div className="relative animate-fade-in-up">
-            <div className="relative w-full max-w-md mx-auto">
+          <div className="relative animate-fade-in-up" style={{ animationDelay: '400ms' }}>
+            <div className="relative w-full max-w-xs sm:max-w-md mx-auto">
               {/* Profile Image */}
               <div className="relative z-10">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-glow">
@@ -131,8 +133,8 @@ export const Hero = () => {
             </div>
 
             {/* Mission Statement Text Only */}
-            <div className="mt-8">
-              <p className="text-center text-lg font-medium leading-relaxed whitespace-pre-line text-muted-foreground">
+            <div className="mt-8 animate-fade-in" style={{ animationDelay: '800ms' }}>
+              <p className="text-center text-base sm:text-lg font-medium leading-relaxed whitespace-pre-line text-muted-foreground">
                 {content[language].mission}
               </p>
             </div>
