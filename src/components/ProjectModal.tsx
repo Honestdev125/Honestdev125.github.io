@@ -93,32 +93,18 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             </div>
           )}
 
-          {/* Architecture (placeholder) */}
-          <div>
-            <h3 className="text-lg font-semibold mb-3 text-foreground">
-              {content[language].architecture}
-            </h3>
-            <div className="bg-muted/50 p-6 rounded-lg border border-border">
-              <p className="text-sm text-muted-foreground text-center">
-                {language === 'ja' 
-                  ? 'アーキテクチャ図はプロジェクト詳細で提供されます'
-                  : 'Architecture diagram provided in project details'}
-              </p>
-            </div>
-          </div>
-
           {/* Links */}
           <div className="flex gap-3 pt-4">
             {project.demoUrl && (
-              <Button asChild variant="default" className="bg-gradient-primary">
+              <Button asChild variant="default" className="flex-1 bg-gradient-primary hover:opacity-90 transition-opacity">
                 <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  {content[language].demo}
+                  {language === 'ja' ? 'Webサイトを見る' : 'Visit Website'}
                 </a>
               </Button>
             )}
             {project.sourceUrl && (
-              <Button asChild variant="outline">
+              <Button asChild variant="outline" className="flex-1">
                 <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer">
                   <Code className="h-4 w-4 mr-2" />
                   {content[language].source}

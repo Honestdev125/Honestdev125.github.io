@@ -9,7 +9,7 @@ import { ProjectModal } from '@/components/ProjectModal';
 import { Project } from '@/types';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-type FilterType = 'all' | 'enterprise' | 'education' | 'industry' | 'medical' | 'beauty' | 'other';
+type FilterType = 'all' | 'enterprise' | 'industry' | 'medical' | 'beauty' | 'other';
 
 export const Projects = () => {
   const { language } = useLanguage();
@@ -30,7 +30,6 @@ export const Projects = () => {
       filters: {
         all: '全て表示',
         enterprise: '企業',
-        education: '教育',
         industry: '産業',
         medical: '医療',
         beauty: '美容',
@@ -45,7 +44,6 @@ export const Projects = () => {
       filters: {
         all: 'All',
         enterprise: 'Enterprise',
-        education: 'Education',
         industry: 'Industry',
         medical: 'Medical',
         beauty: 'Beauty',
@@ -56,7 +54,7 @@ export const Projects = () => {
     }
   };
 
-  const filters: FilterType[] = ['all', 'enterprise', 'education', 'industry', 'medical', 'beauty', 'other'];
+  const filters: FilterType[] = ['all', 'enterprise', 'industry', 'medical', 'beauty', 'other'];
 
   const filteredProjects = filter === 'all'
     ? projects

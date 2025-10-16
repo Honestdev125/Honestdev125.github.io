@@ -53,7 +53,7 @@ export const testimonials: Testimonial[] = [
     id: '4',
     name: 'Michael Chen',
     role: {
-      ja: 'CTOーー',
+      ja: 'CTO',
       en: 'CTO'
     },
     company: {

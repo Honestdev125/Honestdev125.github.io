@@ -130,9 +130,9 @@ export const Hero = () => {
               <div className="absolute -bottom-6 -left-6 w-72 h-72 bg-accent/20 rounded-full blur-3xl -z-10 animate-glow-pulse" />
             </div>
 
-            {/* Mission Statement */}
-            <div className="mt-8 p-6 bg-card rounded-xl border border-border shadow-card">
-              <p className="text-center text-lg font-medium leading-relaxed whitespace-pre-line">
+            {/* Mission Statement Text Only */}
+            <div className="mt-8">
+              <p className="text-center text-lg font-medium leading-relaxed whitespace-pre-line text-muted-foreground">
                 {content[language].mission}
               </p>
             </div>

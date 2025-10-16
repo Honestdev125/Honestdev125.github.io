@@ -16,12 +16,10 @@ import predictiveMaintenanceImage from '@/assets/projects/predictive-maintenance
 import hospitalBedsImage from '@/assets/projects/hospital-beds.jpg';
 import spaManagementImage from '@/assets/projects/spa-management.jpg';
 import financialAnalyticsImage from '@/assets/projects/financial-analytics.jpg';
-import virtualClassroomImage from '@/assets/projects/virtual-classroom.jpg';
 import warehouseImage from '@/assets/projects/warehouse.jpg';
 import patientPortalImage from '@/assets/projects/patient-portal.jpg';
 import beautyInfluencerImage from '@/assets/projects/beauty-influencer.jpg';
 import hrSystemImage from '@/assets/projects/hr-system.jpg';
-import studentAssessmentImage from '@/assets/projects/student-assessment.jpg';
 import energyManagementImage from '@/assets/projects/energy-management.jpg';
 import pharmacyImage from '@/assets/projects/pharmacy.jpg';
 
@@ -40,6 +38,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発・アーキテクチャ設計',
       en: 'Full-stack development & Architecture design'
     },
+    demoUrl: 'https://example.com/erp-demo',
     image: erpImage
   },
   {
@@ -50,12 +49,13 @@ export const projects: Project[] = [
       en: 'Interactive online learning platform with video streaming, quizzes, and progress tracking.'
     },
     technologies: ['Next.js', 'React', 'MongoDB', 'WebRTC', 'Redis'],
-    field: 'education',
+    field: 'other',
     tags: ['EdTech', 'Real-time', 'Video'],
     role: {
       ja: 'フロントエンド開発リード',
       en: 'Frontend Development Lead'
     },
+    demoUrl: 'https://example.com/elearning-demo',
     image: elearningImage
   },
   {
@@ -72,6 +72,7 @@ export const projects: Project[] = [
       ja: 'バックエンド開発・IoT統合',
       en: 'Backend Development & IoT Integration'
     },
+    demoUrl: 'https://example.com/iot-demo',
     image: iotFactoryImage
   },
   {
@@ -88,6 +89,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発・セキュリティ担当',
       en: 'Full-stack Development & Security'
     },
+    demoUrl: 'https://example.com/medical-demo',
     image: medicalRecordsImage
   },
   {
@@ -104,6 +106,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/salon-demo',
     image: beautySalonImage
   },
   {
@@ -114,12 +117,13 @@ export const projects: Project[] = [
       en: 'Real estate property search platform with map integration and virtual tours.'
     },
     technologies: ['React', 'Next.js', 'Google Maps API', 'Three.js', 'MongoDB'],
-    field: 'other',
+    field: 'industry',
     tags: ['3D', 'Maps', 'Search'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
+    demoUrl: 'https://example.com/realestate-demo',
     image: realEstateImage
   },
   {
@@ -136,6 +140,7 @@ export const projects: Project[] = [
       ja: 'バックエンド開発・AI統合',
       en: 'Backend Development & AI Integration'
     },
+    demoUrl: 'https://example.com/supply-demo',
     image: supplyChainImage
   },
   {
@@ -146,12 +151,13 @@ export const projects: Project[] = [
       en: 'Online course marketplace connecting instructors with students.'
     },
     technologies: ['React', 'Node.js', 'Stripe', 'AWS S3', 'ElasticSearch'],
-    field: 'education',
+    field: 'other',
     tags: ['Marketplace', 'Payment', 'Search'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/course-demo',
     image: courseMarketplaceImage
   },
   {
@@ -162,12 +168,13 @@ export const projects: Project[] = [
       en: 'Smart home automation system with IoT device integration and voice control.'
     },
     technologies: ['React Native', 'Node.js', 'MQTT', 'Alexa Skills', 'Redis'],
-    field: 'industry',
+    field: 'enterprise',
     tags: ['IoT', 'Mobile', 'Voice'],
     role: {
       ja: 'モバイルアプリ開発',
       en: 'Mobile App Development'
     },
+    demoUrl: 'https://example.com/smarthome-demo',
     image: smartHomeImage
   },
   {
@@ -184,6 +191,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/telemedicine-demo',
     image: telemedicineImage
   },
   {
@@ -200,6 +208,7 @@ export const projects: Project[] = [
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
+    demoUrl: 'https://example.com/beauty-ecom-demo',
     image: beautyEcommerceImage
   },
   {
@@ -216,6 +225,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/corporate-demo',
     image: corporateCommImage
   },
   {
@@ -226,12 +236,13 @@ export const projects: Project[] = [
       en: 'Educational games platform with gamification and multiplayer features.'
     },
     technologies: ['React', 'Phaser.js', 'Node.js', 'Socket.io', 'PostgreSQL'],
-    field: 'education',
+    field: 'other',
     tags: ['Gaming', 'Real-time', 'Gamification'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
+    demoUrl: 'https://example.com/games-demo',
     image: learningGamesImage
   },
   {
@@ -248,6 +259,7 @@ export const projects: Project[] = [
       ja: 'データサイエンス・バックエンド開発',
       en: 'Data Science & Backend Development'
     },
+    demoUrl: 'https://example.com/predictive-demo',
     image: predictiveMaintenanceImage
   },
   {
@@ -264,6 +276,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/hospital-demo',
     image: hospitalBedsImage
   },
   {
@@ -280,6 +293,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/spa-demo',
     image: spaManagementImage
   },
   {
@@ -296,23 +310,8 @@ export const projects: Project[] = [
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
+    demoUrl: 'https://example.com/finance-demo',
     image: financialAnalyticsImage
-  },
-  {
-    id: '18',
-    title: 'Virtual Classroom Platform',
-    description: {
-      ja: 'バーチャル教室プラットフォーム。ライブ授業、ホワイトボード、画面共有機能。',
-      en: 'Virtual classroom platform with live classes, whiteboard, and screen sharing.'
-    },
-    technologies: ['React', 'WebRTC', 'Socket.io', 'Canvas API', 'AWS'],
-    field: 'education',
-    tags: ['Video', 'Real-time', 'Collaboration'],
-    role: {
-      ja: 'フルスタック開発',
-      en: 'Full-stack Development'
-    },
-    image: virtualClassroomImage
   },
   {
     id: '19',
@@ -328,6 +327,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/warehouse-demo',
     image: warehouseImage
   },
   {
@@ -338,12 +338,13 @@ export const projects: Project[] = [
       en: 'Patient portal with health records access, appointments, and doctor messaging.'
     },
     technologies: ['React', 'Node.js', 'MongoDB', 'FHIR', 'OAuth2'],
-    field: 'medical',
+    field: 'other',
     tags: ['Healthcare', 'Security', 'API'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/patient-demo',
     image: patientPortalImage
   },
   {
@@ -360,6 +361,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/influencer-demo',
     image: beautyInfluencerImage
   },
   {
@@ -376,23 +378,8 @@ export const projects: Project[] = [
       ja: 'バックエンド開発',
       en: 'Backend Development'
     },
+    demoUrl: 'https://example.com/hr-demo',
     image: hrSystemImage
-  },
-  {
-    id: '23',
-    title: 'Student Assessment Platform',
-    description: {
-      ja: '学生評価プラットフォーム。オンライン試験、自動採点、成績分析機能。',
-      en: 'Student assessment platform with online exams, auto-grading, and analytics.'
-    },
-    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'ML', 'Docker'],
-    field: 'education',
-    tags: ['Assessment', 'AI', 'Analytics'],
-    role: {
-      ja: 'フルスタック開発',
-      en: 'Full-stack Development'
-    },
-    image: studentAssessmentImage
   },
   {
     id: '24',
@@ -402,12 +389,13 @@ export const projects: Project[] = [
       en: 'Energy management dashboard with consumption monitoring and cost analysis.'
     },
     technologies: ['React', 'Python', 'InfluxDB', 'Grafana', 'IoT'],
-    field: 'industry',
+    field: 'other',
     tags: ['IoT', 'Data Visualization', 'Green Tech'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
+    demoUrl: 'https://example.com/energy-demo',
     image: energyManagementImage
   },
   {
@@ -424,6 +412,7 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
+    demoUrl: 'https://example.com/pharmacy-demo',
     image: pharmacyImage
   }
 ];

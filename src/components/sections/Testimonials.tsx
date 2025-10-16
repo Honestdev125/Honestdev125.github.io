@@ -1,11 +1,19 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { testimonials } from '@/data/testimonials';
 import { Card, CardContent } from '@/components/ui/card';
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Quote } from 'lucide-react';
+import avatar1 from '@/assets/testimonials/avatar1.jpg';
+import avatar2 from '@/assets/testimonials/avatar2.jpg';
+import avatar3 from '@/assets/testimonials/avatar3.jpg';
+import avatar4 from '@/assets/testimonials/avatar4.jpg';
+import avatar5 from '@/assets/testimonials/avatar5.jpg';
+import avatarAnonymous from '@/assets/testimonials/avatar-anonymous.jpg';
 
 export const Testimonials = () => {
   const { language } = useLanguage();
+
+  const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatarAnonymous];
 
   const content = {
     ja: {
@@ -50,7 +58,12 @@ export const Testimonials = () => {
 
                 {/* Author Info */}
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <Avatar>
+                  <Avatar className="h-12 w-12">
+                    <AvatarImage 
+                      src={avatars[index] || avatarAnonymous} 
+                      alt={testimonial.anonymous ? 'Anonymous' : testimonial.name}
+                      className="object-cover"
+                    />
                     <AvatarFallback className="bg-gradient-primary text-primary-foreground">
                       {testimonial.anonymous
                         ? '?'

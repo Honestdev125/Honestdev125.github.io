@@ -67,3 +67,17 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gradient-slide {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-slide {
+  background-size: 200% 100%;
+  animation: gradient-slide 3s ease-in-out infinite;
+}
