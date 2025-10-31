@@ -48,7 +48,7 @@ export const Experience = () => {
               <div
                 key={exp.id}
                 className={`relative animate-fade-in-up ${
-                  index % 2 === 0 ? 'md:pr-[50%]' : 'md:pl-[50%]'
+                  index % 2 === 0 ? 'md:pr-[55%]' : 'md:pl-[55%]'
                 }`}
                 style={{ animationDelay: `${index * 150}ms` }}
               >
@@ -79,10 +79,6 @@ export const Experience = () => {
                       )}
                     </div>
 
-                    {/* Role Badge */}
-                    <div className="inline-block px-2 sm:px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs sm:text-sm font-medium animate-fade-in" style={{ animationDelay: `${index * 150 + 300}ms` }}>
-                      {exp.role[language]}
-                    </div>
 
                     {/* Achievements */}
                     <div className="space-y-2 pt-2">

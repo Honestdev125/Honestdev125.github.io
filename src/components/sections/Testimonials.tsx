@@ -8,12 +8,11 @@ import avatar2 from '@/assets/testimonials/avatar2.jpg';
 import avatar3 from '@/assets/testimonials/avatar3.jpg';
 import avatar4 from '@/assets/testimonials/avatar4.jpg';
 import avatar5 from '@/assets/testimonials/avatar5.jpg';
-import avatarAnonymous from '@/assets/testimonials/avatar-anonymous.jpg';
 
 export const Testimonials = () => {
   const { language } = useLanguage();
 
-  const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatarAnonymous];
+  const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5];
 
   const content = {
     ja: {
@@ -66,7 +65,7 @@ export const Testimonials = () => {
                   <div className="flex items-center gap-3 pt-4 border-t border-border animate-fade-in" style={{ animationDelay: `${index * 150 + 200}ms` }}>
                   <Avatar className="h-12 w-12">
                     <AvatarImage 
-                      src={avatars[index] || avatarAnonymous} 
+                      src={avatars[index]} 
                       alt={testimonial.anonymous ? 'Anonymous' : testimonial.name}
                       className="object-cover"
                     />

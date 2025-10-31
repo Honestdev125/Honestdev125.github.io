@@ -2,7 +2,7 @@ export type Language = 'ja' | 'en';
 
 export interface Project {
   id: string;
-  title: string;
+  title: string | { ja: string; en: string };
   description: { ja: string; en: string };
   technologies: string[];
   field: 'enterprise' | 'education' | 'industry' | 'medical' | 'beauty' | 'other';

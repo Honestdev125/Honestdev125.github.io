@@ -26,196 +26,228 @@ import pharmacyImage from '@/assets/projects/pharmacy.jpg';
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Enterprise Resource Planning System',
-    description: {
-      ja: '大規模企業向け統合業務管理システム。在庫管理、財務管理、人事管理を統合。',
-      en: 'Comprehensive ERP system for large enterprises integrating inventory, finance, and HR management.'
+    title: {
+      ja: '宇津商事株式会社｜創業100年の化学品専門商社',
+      en: 'Utsu Shoji Co., Ltd. | A specialized trading company for chemical products, founded 100 years ago.'
     },
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'AWS'],
+    description: {
+      ja: '創業100年の化学品専門商社、宇津商事株式会社。上海やシンガポールや台湾に拠点を持つグローバル企業です。',
+      en: 'Utsu Shoji Co., Ltd., founded 100 years ago, is a specialized trading company that handles chemical products. With bases in Shanghai, Singapore, and Taiwan, the company operates globally.'
+    },
+    technologies: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'AWS'],
     field: 'enterprise',
     tags: ['Full-Stack', 'Cloud', 'Real-time'],
     role: {
       ja: 'フルスタック開発・アーキテクチャ設計',
       en: 'Full-stack development & Architecture design'
     },
-    demoUrl: 'https://example.com/erp-demo',
+    demoUrl: 'https://www.utsu-corp.com/',
     image: erpImage
   },
   {
     id: '2',
-    title: 'E-Learning Platform',
-    description: {
-      ja: 'インタラクティブなオンライン学習プラットフォーム。ビデオストリーミング、クイズ、進捗管理機能。',
-      en: 'Interactive online learning platform with video streaming, quizzes, and progress tracking.'
+    title: {
+      ja: 'Sartaj Foods Japan｜日本最大級のインド食材オンラインストア',
+      en: 'Sartaj Foods Japan :: The largest Online Indian Grocery Store in japan with a huge variety of indian spices and international brands in japan.'
     },
-    technologies: ['Next.js', 'React', 'MongoDB', 'WebRTC', 'Redis'],
+    description: {
+      ja: 'Sartaj Foods Japanは、日本最大級のインド食材オンラインストアとして、豊富なインドスパイスや各国ブランド商品を取り揃えています。高品質なインド食材やスパイスをはじめ、食品全般を幅広くご用意。Sartaj Foods Japanでは、食品だけでなく多彩なコスメ・美容商品も販売しています。取り扱い商品はすべて100％ベジタリアン対応で、安心してお召し上がりいただけます。日本全国への配送にも対応。Sartaj Co., Ltdは、Vadilal、MDH、Haldiram Nagpur（Moplleez）、Dabur Herbal、India Gateバスマティライス、Haldiram、Britanniaなどの国際ブランド正規輸入代理店です。',
+      en: 'SartajFoods Japan has all Indian grocery products, spices,  with the best quality and food products in Japan. Sartaj Co. ltd location 563-0043, 2 Chome-10-23 Koda, Ikeda, Osaka.  Contact Details of Food Store in Japan: 072-751-1975 Buy Online at: www.sartajfoods.jp. Sartaj Foods Japan also offers a large variety of cosmetics and beauty products in Japan. All Products available at Sartaj foods japan are 100% Veg and suitable for vegetarians to consume. SartajFoods offers delivery all over the region of Japan.  Sartaj Co. Ltd is an authenticate importer of  International brands like Vadilal, MDH, Haldiram Nagpur (Moplleez), Dabur Herbal, Basmati India Gate, Haldiram, Britannia'
+    },
+    technologies: ['Next.js', 'React', 'Animate.css', 'Vercel', 'AWS'],
     field: 'other',
     tags: ['EdTech', 'Real-time', 'Video'],
     role: {
       ja: 'フロントエンド開発リード',
       en: 'Frontend Development Lead'
     },
-    demoUrl: 'https://example.com/elearning-demo',
+    demoUrl: 'https://www.sartajfoods.jp/',
     image: elearningImage
   },
   {
     id: '3',
-    title: 'IoT Factory Management Dashboard',
-    description: {
-      ja: '工場設備のリアルタイム監視・制御システム。センサーデータ可視化とアラート機能。',
-      en: 'Real-time monitoring and control system for factory equipment with sensor data visualization.'
+    title: {
+      ja: 'ウェルダー加工を高品質・短納期・低価格で解決｜株式会社トラスト',
+      en: 'High-Quality, Fast, and Affordable Welder Processing | TRUST Co., Ltd.'
     },
-    technologies: ['Vue.js', 'Python', 'InfluxDB', 'MQTT', 'Docker'],
+    description: {
+      ja: 'ウェルダー加工を始めて40年の実績。株式会社トラストは、大手文具メーカーからの多数のウェルダー加工業務を請け負っている高い技術で、PVC、オレフィン、PPなど、ウェルダー加工の課題を高品質・短納期・低価格で解決します。',
+      en: 'With over 40 years of experience in welder processing, TRUST Co., Ltd. delivers top-quality results at competitive prices and with quick turnaround times. Trusted by major stationery manufacturers, our advanced technology solves all your welder processing challenges for materials such as PVC, olefin, and PP.'
+    },
+    technologies: ['React', 'Next.js', 'JQuery', 'Nginx', 'Webpack', 'AWS'],
     field: 'industry',
     tags: ['IoT', 'Real-time', 'Data Visualization'],
     role: {
       ja: 'バックエンド開発・IoT統合',
       en: 'Backend Development & IoT Integration'
     },
-    demoUrl: 'https://example.com/iot-demo',
+    demoUrl: 'https://www.j-trust.jp/',
     image: iotFactoryImage
   },
   {
     id: '4',
-    title: 'Medical Record Management System',
-    description: {
-      ja: '電子カルテシステム。患者情報管理、予約管理、処方箋発行機能を実装。',
-      en: 'Electronic medical records system with patient management, appointments, and prescription features.'
+    title: {
+      ja: '武田薬品工業株式会社｜グローバルホームページ',
+      en: 'Takeda Pharmaceuticals: Global Homepage'
     },
-    technologies: ['React', 'TypeScript', 'NestJS', 'PostgreSQL', 'HIPAA'],
+    description: {
+      ja: '武田薬品工業は、患者中心の理念に基づき、研究開発を原動力とするグローバルなバイオ医薬品企業です。 「より良い健康」と「より明るい未来」をお届けすることを使命としています。',
+      en: 'Takeda is a patient-focused, R&D-driven global biopharmaceutical company committed to bringing Better Health and a Brighter Future.'
+    },
+    technologies: ['React', 'Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
     field: 'medical',
     tags: ['Healthcare', 'Security', 'Compliance'],
     role: {
       ja: 'フルスタック開発・セキュリティ担当',
       en: 'Full-stack Development & Security'
     },
-    demoUrl: 'https://example.com/medical-demo',
+    demoUrl: 'https://www.takeda.com/',
     image: medicalRecordsImage
   },
   {
     id: '5',
-    title: 'Beauty Salon Booking System',
-    description: {
-      ja: '美容サロン向け予約管理システム。オンライン予約、顧客管理、売上分析機能。',
-      en: 'Booking management system for beauty salons with online reservations and customer analytics.'
+    title: {
+      ja: 'ローズプラザ有楽町',
+      en: 'Rose Plaza Yurakucho'
     },
-    technologies: ['React', 'Firebase', 'Stripe', 'Tailwind CSS'],
+    description: {
+      ja: '最高級のブルガリアン・ローズ配合化粧品をお届けする店舗、ローズプラザ（ROSE PLAZA)。ECOMAAT（エコマット）のブルガリアン・ローズウォーター、ローズ・オイル入り化粧品、さらにBulgarska Rosa Karlovo（ブルガリア・ローズカルロボ）のローズウォーター100%ナチュラルは大人気の商品です。',
+      en: 'Rose Plaza (ROSE PLAZA) is a store that offers premium cosmetics infused with the finest Bulgarian rose. Their popular products include ECOMAAT’s Bulgarian rose water, cosmetics containing rose oil, and Bulgarska Rosa Karlovo’s 100% natural rose water.'
+    },
+    technologies: ['Wordpress', 'PHP', 'JQuery', 'Nginx'],
     field: 'beauty',
     tags: ['SaaS', 'Payment', 'Mobile-friendly'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/salon-demo',
+    demoUrl: 'https://roseplaza.jp/',
     image: beautySalonImage
   },
   {
     id: '6',
-    title: 'Real Estate Property Search Platform',
-    description: {
-      ja: '不動産物件検索プラットフォーム。地図連携、詳細検索、バーチャルツアー機能。',
-      en: 'Real estate property search platform with map integration and virtual tours.'
+    title: {
+      ja: 'SYUSEI公式サイト。',
+      en: 'SYUSEI TECHNICAL COLLEGE - If you want to learn architecture, interior design, civil engineering, and landscaping'
     },
-    technologies: ['React', 'Next.js', 'Google Maps API', 'Three.js', 'MongoDB'],
+    description: {
+      ja: 'SYUSEI公式サイト。建築・土木・造園、そして在学中に二級・一級建築士に挑戦できる専科の各学科案内、学校説明会・入試・キャンパスライフの最新情報を掲載。',
+      en: 'Official SYUSEI website. Find information on our specialized departments in architecture, civil engineering, and landscaping — where students can challenge the Second- and First-Class Architect examinations while still in school. Also features the latest updates on school briefings, admissions, and campus life.'
+    },
+    technologies: ['Wordpress', 'PHP', 'JQuery', 'MySQL', 'JQuery'],
     field: 'industry',
     tags: ['3D', 'Maps', 'Search'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
-    demoUrl: 'https://example.com/realestate-demo',
+    demoUrl: 'https://www.syusei.ac.jp/',
     image: realEstateImage
   },
   {
     id: '7',
-    title: 'Supply Chain Management Platform',
-    description: {
-      ja: 'サプライチェーン最適化プラットフォーム。物流追跡、在庫最適化、AI予測分析。',
-      en: 'Supply chain optimization platform with logistics tracking and AI-powered forecasting.'
+    title: {
+      ja: 'ユニトランス株式会社',
+      en: 'Unitrans Co., Ltd.'
     },
-    technologies: ['React', 'Django', 'TensorFlow', 'PostgreSQL', 'Kubernetes'],
+    description: {
+      ja: 'ユニトランスは三菱倉庫100％出資会社です。三菱倉庫グループの豊富な物流ノウハウを生かし、航空輸送を主とした、安心のロジスティクスサービスを創造し、弊社を取り巻く全ての関係者と社会の発展に貢献します。',
+      en: 'Unitrans is a wholly owned subsidiary of Mitsubishi Warehouse Co., Ltd. Leveraging the extensive logistics expertise of the Mitsubishi Warehouse Group, we provide reliable logistics services centered on air transportation. Through these efforts, we aim to contribute to the growth and development of all our stakeholders and society as a whole.'
+    },
+    technologies: ['Wordpress', 'PHP', 'Node.js', 'PostgreSQL', 'Kubernetes'],
     field: 'enterprise',
     tags: ['AI', 'Logistics', 'Optimization'],
     role: {
       ja: 'バックエンド開発・AI統合',
       en: 'Backend Development & AI Integration'
     },
-    demoUrl: 'https://example.com/supply-demo',
+    demoUrl: 'https://www.mitsubishi-logistics.co.jp/unitrans/',
     image: supplyChainImage
   },
   {
     id: '8',
-    title: 'Online Course Marketplace',
-    description: {
-      ja: 'オンライン講座マーケットプレイス。講師と受講者をつなぐプラットフォーム。',
-      en: 'Online course marketplace connecting instructors with students.'
+    title: {
+      ja: '大手登録支援機関｜経験豊富なジョブパートナーにお任せください',
+      en: 'Major Registered Support Organization｜Leave it to Our Experienced Job Partners'
     },
-    technologies: ['React', 'Node.js', 'Stripe', 'AWS S3', 'ElasticSearch'],
+    description: {
+      ja: '在留資格『特定技能』の人材採用・支援は、大手登録支援機関のジョブパートナーが一気通貫でご期待にお応えできます。宅地建物取引業・SIMカードのレンタル事業も行っており、他の支援機関に無い多角的なサポートで外国籍人材と企業を繋ぎます。 特定技能はジョブパートナーにお任せください 。',
+      en: 'For recruiting and supporting foreign workers under the Specified Skilled Worker (Tokutei Ginou) visa, Job Partner, a leading registered support organization, provides comprehensive, end-to-end services you can trust. In addition to employment support, we also operate in real estate and SIM card rental services, offering a unique, multifaceted approach unmatched by other support agencies. For all your Specified Skilled Worker needs, trust Job Partner.'
+    },
+    technologies: ['Wordpress', 'PHP', 'MySQL', 'Nginx'],
     field: 'other',
     tags: ['Marketplace', 'Payment', 'Search'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/course-demo',
+    demoUrl: 'https://jobpartner-jp.com/',
     image: courseMarketplaceImage
   },
   {
     id: '9',
-    title: 'Smart Home Automation System',
+    title: {
+      ja: 'eBayスピードパック ｜ オレンジコネックス ｜ 物流',
+      en: 'eBay SpeedPAK | OrangeConnex Japan'
+    },
     description: {
-      ja: 'スマートホーム制御システム。IoTデバイス統合、音声制御、自動化ルール設定。',
-      en: 'Smart home automation system with IoT device integration and voice control.'
+      ja: 'eBayスピードパック ｜ オレンジコネックス ｜ 物流',
+      en: 'eBay SpeedPAK ｜ OrangeConnex ｜ Logistic'
     },
-    technologies: ['React Native', 'Node.js', 'MQTT', 'Alexa Skills', 'Redis'],
+    technologies: ['Vue.js', 'Nuxt.js', 'Node.js', 'Webpack'],
     field: 'enterprise',
-    tags: ['IoT', 'Mobile', 'Voice'],
-    role: {
-      ja: 'モバイルアプリ開発',
-      en: 'Mobile App Development'
-    },
-    demoUrl: 'https://example.com/smarthome-demo',
+    tags: ['Marketplace', 'Payment', 'Search'],
+    demoUrl: 'https://orangeconnex.jp/',
     image: smartHomeImage
   },
   {
     id: '10',
-    title: 'Telemedicine Platform',
-    description: {
-      ja: '遠隔医療プラットフォーム。ビデオ診察、処方箋管理、健康データ追跡機能。',
-      en: 'Telemedicine platform with video consultations and health data tracking.'
+    title: {
+      ja: '美濃加茂市の総合歯科医院｜医療法人社団神明会 佐藤歯科医院',
+      en: 'Sato Dental Clinic – Comprehensive Dentistry in Minokamo City | Shinmeikai Medical Corporation'
     },
-    technologies: ['React', 'WebRTC', 'Node.js', 'MongoDB', 'HIPAA'],
+    description: {
+      ja: '岐阜県美濃加茂市にある審美・矯正・小児歯科、インプラント、入れ歯・ブリッジ治療、口腔外科の医療法人社団神明会佐藤歯科医院のホームページです。専属ドライバーによる送迎や訪問歯科診療も実施。歯でお困りなら日曜祝日も診療可能な佐藤歯科医院にお問い合わせください。',
+      en: 'Sato Dental Clinic, part of Shinmeikai Medical Corporation, is located in Minokamo City, Gifu Prefecture, and offers a full range of dental services, including cosmetic dentistry, orthodontics, pediatric dentistry, implants, dentures and bridges, and oral surgery. We provide patient-friendly services such as transportation by our dedicated driver and home dental visits. If you have any dental concerns, contact Sato Dental Clinic, open even on Sundays and public holidays.'
+    },
+    technologies: ['Wordpress', 'PHP', 'MySQL', 'JQuery', 'Google Maps'],
     field: 'medical',
     tags: ['Healthcare', 'Video', 'Security'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/telemedicine-demo',
+    demoUrl: 'https://www.dentist-sato.com/',
     image: telemedicineImage
   },
   {
     id: '11',
-    title: 'Beauty Product E-commerce',
-    description: {
-      ja: '美容製品ECサイト。パーソナライズド推薦、AR試着機能、定期購入システム。',
-      en: 'Beauty product e-commerce with personalized recommendations and AR try-on.'
+    title: {
+      ja: 'BREATHER株式会社 | TOP',
+      en: 'BREATHER Inc. | Home'
     },
-    technologies: ['Vue.js', 'Shopify API', 'TensorFlow.js', 'Stripe', 'AWS'],
+    description: {
+      ja: '呼吸を変えれば、あなたは変わる。BREATHER株式会社のオフィシャルページです。',
+      en: 'Change your breathing, change yourself. This is the official page of BREATHER Inc.'
+    },
+    technologies: ['Wordpress', 'PHP', 'MySQL', 'JQuery', 'Axios'],
     field: 'beauty',
     tags: ['E-commerce', 'AR', 'AI'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
-    demoUrl: 'https://example.com/beauty-ecom-demo',
+    demoUrl: 'https://www.breather.co.jp/',
     image: beautyEcommerceImage
   },
   {
     id: '12',
-    title: 'Corporate Communication Platform',
+    title: {
+      ja: 'TOP | WINCOS',
+      en: 'TOP | WINCOS'
+    },
     description: {
-      ja: '社内コミュニケーションプラットフォーム。チャット、ファイル共有、プロジェクト管理。',
+      ja: 'This is the brand website for WINCOS, a line of window films for automobiles and buildings. WINCOS offers a wide range of functional window films designed to address various challenges and meet diverse customer needs.',
       en: 'Corporate communication platform with chat, file sharing, and project management.'
     },
     technologies: ['React', 'Socket.io', 'Express', 'MongoDB', 'AWS S3'],
@@ -225,194 +257,227 @@ export const projects: Project[] = [
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/corporate-demo',
+    demoUrl: 'https://www.wincos-film.com/',
     image: corporateCommImage
   },
   {
     id: '13',
-    title: 'Interactive Learning Games Platform',
-    description: {
-      ja: '教育ゲームプラットフォーム。ゲーミフィケーション、進捗追跡、マルチプレイヤー機能。',
-      en: 'Educational games platform with gamification and multiplayer features.'
+    title: {
+      ja: '桜十字グループ',
+      en: 'Sakurajyuji Group'
     },
-    technologies: ['React', 'Phaser.js', 'Node.js', 'Socket.io', 'PostgreSQL'],
+    description: {
+      ja: '桜十字グループに関する最新ニュースとトピックスをまとめています。プレスリリース、メディア掲載、お知らせ、ウェルビーイングに関する先進的な取り組みなど、企業活動の多様なカテゴリーを網羅した公式情報を随時更新。経営・採用・事業連携に関わる重要な情報発信拠点です。',
+      en: 'We provide the latest news and updates about the Sakurajyuji Group. This includes press releases, media coverage, announcements, and advanced initiatives related to well-being. Covering a wide range of corporate activities, this official information hub is regularly updated and serves as a key source for insights on management, recruitment, and business partnerships.'
+    },
+    technologies: ['Wordpress', 'PHP', 'D3.js', 'MySQL', 'Nginx'],
     field: 'other',
     tags: ['Gaming', 'Real-time', 'Gamification'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
-    demoUrl: 'https://example.com/games-demo',
+    demoUrl: 'https://www.sakurajyuji.jp/',
     image: learningGamesImage
   },
   {
     id: '14',
-    title: 'Predictive Maintenance System',
-    description: {
-      ja: '予知保全システム。機械学習による故障予測、メンテナンススケジュール最適化。',
-      en: 'Predictive maintenance system with ML-powered failure prediction.'
+    title: {
+      ja: '受発注業務のDX化で事業を変革 - URRY',
+      en: 'Transforming Business Through DX in Order Management – URRY'
     },
-    technologies: ['Python', 'TensorFlow', 'React', 'InfluxDB', 'Docker'],
+    description: {
+      ja: 'コカ・コーラ ボトラーズジャパンと伴内酒店が生み出した飲料品受発注革命。酒屋と飲食店を繋ぐネットワークであるURRYは双方の受発注業務の効率化を図ります。飲食店は注文の手間が減り、新しい商品に出会えると同時に、酒屋はプロモーションをリアルタイムでお客様に届け、売り上げを向上でき、受注業務の効率化を図れます。受発注業務をぜひURRYにお任せ！',
+      en: 'URRY, created by Coca-Cola Bottlers Japan and Tomonai Sake Shop, is revolutionizing beverage ordering. As a network connecting liquor stores and restaurants, URRY streamlines order management for both sides. Restaurants save time on ordering and discover new products, while liquor stores can deliver promotions to customers in real time, boost sales, and optimize order operations. Leave your ordering processes to URRY and experience the efficiency!'
+    },
+    technologies: ['React', 'next.js', 'Node.js', 'TailwindCSS', 'Webpack'],
     field: 'industry',
     tags: ['AI', 'ML', 'Data Science'],
     role: {
       ja: 'データサイエンス・バックエンド開発',
       en: 'Data Science & Backend Development'
     },
-    demoUrl: 'https://example.com/predictive-demo',
+    demoUrl: 'https://urry.com/',
     image: predictiveMaintenanceImage
   },
   {
     id: '15',
-    title: 'Hospital Bed Management System',
-    description: {
-      ja: '病院ベッド管理システム。リアルタイム空床状況、患者割り当て最適化。',
-      en: 'Hospital bed management system with real-time availability and patient assignment.'
+    title: {
+      ja: 'テクニカ　歯科・外科・獣医科向け医療用ツール専門店 – Technika',
+      en: 'Technika – Specialized Medical Tools for Dentistry, Surgery, and Veterinary Medicine.'
     },
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'WebSocket', 'Redis'],
+    description: {
+      ja: 'テクニカは医療プロフェッショナルの方々のための医療用ツール専門店です。 医療現場の細かなニーズに応える少量生産品、オーダーメイド品を中心に取り扱っています。',
+      en: 'Technika is a specialty store offering medical tools for healthcare professionals. We focus on small-batch and custom-made products that meet the precise needs of medical settings.'
+    },
+    technologies: ['Shopify', 'Bootstrap', 'JQuery', 'Paypal'],
     field: 'medical',
     tags: ['Healthcare', 'Real-time', 'Optimization'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/hospital-demo',
+    demoUrl: 'https://technika.co.jp/',
     image: hospitalBedsImage
   },
   {
     id: '16',
-    title: 'Spa Management & Booking System',
-    description: {
-      ja: 'スパ管理システム。予約管理、顧客CRM、マーケティング自動化機能。',
-      en: 'Spa management system with booking, CRM, and marketing automation.'
+    title: {
+      ja: '高収入副業探すなら撮影会モデルバイト【2025年版】日払い求人｜単発バイトなら撮影会の仕事がおすすめ.PEACE',
+      en: 'Looking for a High-Paying Side Job? Try Being a Photo Session Model [2025 Edition] | Daily Pay Available'
     },
-    technologies: ['React', 'Node.js', 'MongoDB', 'SendGrid', 'Stripe'],
+    description: {
+      ja: '副業で手軽に稼げる撮影会モデルのアルバイトを募集中。カメラマンの被写体モデルになるお仕事で手軽に空いた時間でお仕事が可能です。１日で８万稼ぐモデルさんも続出',
+      en: 'PEACE. is recruiting models for photo sessions as a side job. This work involves posing as a model for photographers and is perfect for earning extra income in your spare time. Some models even earn up to ¥80,000 in a single day!'
+    },
+    technologies: ['PHP', 'Animate.css', 'JQuery', 'Nginx'],
     field: 'beauty',
     tags: ['SaaS', 'CRM', 'Automation'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/spa-demo',
+    demoUrl: 'https://satueikai.club/',
     image: spaManagementImage
   },
   {
     id: '17',
-    title: 'Financial Analytics Dashboard',
-    description: {
-      ja: '金融分析ダッシュボード。リアルタイム市場データ、チャート分析、ポートフォリオ管理。',
-      en: 'Financial analytics dashboard with real-time market data and portfolio management.'
+    title: {
+      ja: '大阪の民泊運営代行は、airbnb認定パートナーのらくビーにお任せ！集客から運用、清掃までトータルサポート',
+      en: 'We offer customized plans tailored to your needs, whether you’re launching a new property or outsourcing ongoing management.'
     },
-    technologies: ['React', 'D3.js', 'WebSocket', 'Redis', 'PostgreSQL'],
+    description: {
+      ja: 'らくビーは民泊の運営を全て任せることがでる大阪特化の民泊運営代行サービスです。多言語対応、メッセージ代行、清掃も含む民泊に関する運用業務をairbnb認定パートナーのらくビーが全面サポートします。お客様に合わせたおすすめのプランをご提案いたします。開業（立ち上げ）も委託もお任せください。  ',
+      en: 'RakuBee is an Osaka-based vacation rental management service that handles everything for you. As an Airbnb-certified partner, we provide full support for all aspects of your rental operations — including multilingual guest communication, message handling, cleaning, and more.'
+    },
+    technologies: ['Vue.js', 'Nuxt.js', 'Firebase', 'Google Cloud', 'TypeScript'],
     field: 'enterprise',
     tags: ['Finance', 'Real-time', 'Data Visualization'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
-    demoUrl: 'https://example.com/finance-demo',
+    demoUrl: 'https://minpaku-rakubee.jp/',
     image: financialAnalyticsImage
   },
   {
     id: '19',
-    title: 'Warehouse Management System',
-    description: {
-      ja: '倉庫管理システム。在庫追跡、バーコードスキャン、配送最適化。',
-      en: 'Warehouse management system with inventory tracking and shipping optimization.'
+    title: {
+      ja: '新川電機株式会社｜計測・制御のスペシャリスト',
+      en: 'Shinkawa Electric Co., Ltd. | Specialists in Measurement and Control'
     },
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Barcode Scanner API', 'Docker'],
+    description: {
+      ja: '1927年の創業から長年培った確かな技術とノウハウ。私たちは、産業界の品質、生産性、自動化、省力化、環境保全、安全性が求められるあらゆるシーンに貢献するトータルエンジニアリング企業です。',
+      en: 'Founded in 1927, we have honed our expertise and technical know-how over decades. We are a comprehensive engineering company contributing to every industrial scene where quality, productivity, automation, labor-saving, environmental protection, and safety are essential.'
+    },
+    technologies: ['Wordpress', 'PHP', 'MySQL', 'AWS'],
     field: 'industry',
     tags: ['Logistics', 'Optimization', 'Mobile'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/warehouse-demo',
+    demoUrl: 'https://www.shinkawa.co.jp/',
     image: warehouseImage
   },
   {
     id: '20',
-    title: 'Patient Portal & Health Records',
-    description: {
-      ja: '患者ポータル。健康記録閲覧、予約管理、医師とのメッセージング機能。',
-      en: 'Patient portal with health records access, appointments, and doctor messaging.'
+    title: {
+      ja: 'トレイダーズホールディングス株式会社',
+      en: 'Traders Holdings Co., Ltd.'
     },
-    technologies: ['React', 'Node.js', 'MongoDB', 'FHIR', 'OAuth2'],
+    description: {
+      ja: '金融事業とITテクノロジーサービスをグループの中核事業として展開するトレイダーズグループは、「金融を、もっと面白く」を掲げ、お客様から最も信頼される“FinTech”グループとなり、だれもが未来に投資できる社会を実現させます。',
+      en: 'Centering its group operations on financial services and IT technology, the Traders Group strives to make finance more exciting under the slogan “Making Finance More Interesting.” Our goal is to become the most trusted FinTech group for our customers and to create a society where everyone can invest in their future.'
+    },
+    technologies: ['Wordpress', 'PHP', 'Three.js', 'JQuery', 'Nginx'],
     field: 'other',
     tags: ['Healthcare', 'Security', 'API'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/patient-demo',
+    demoUrl: 'https://www.tradershd.com/',
     image: patientPortalImage
   },
   {
     id: '21',
-    title: 'Beauty Influencer Platform',
-    description: {
-      ja: '美容インフルエンサープラットフォーム。コンテンツ投稿、フォロワー管理、収益化機能。',
-      en: 'Beauty influencer platform with content posting and monetization features.'
+    title: {
+      ja: 'medy | マシン専門パーソナルピラティス',
+      en: 'medy | Personal Pilates with Specialized Machines'
     },
-    technologies: ['Next.js', 'GraphQL', 'PostgreSQL', 'S3', 'Stripe'],
+    description: {
+      ja: 'medyは、解剖学に基づく丁寧な指導と多様なマシンで、姿勢改善やボディラインの引き締めを一対一でサポートします。初心者から経験者まで、あらゆる年代の方におすすめです。',
+      en: 'At medy, we provide one-on-one support for improving posture and toning your body using a variety of machines, guided carefully based on anatomy. Our programs are recommended for all ages, from beginners to experienced practitioners.'
+    },
+    technologies: ['Vue.js', 'Nuxt.js', 'Firebase', 'Google Cloud'],
     field: 'beauty',
     tags: ['Social Media', 'Content', 'Monetization'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/influencer-demo',
+    demoUrl: 'https://medy-pilates.com/',
     image: beautyInfluencerImage
   },
   {
     id: '22',
-    title: 'HR Management System',
-    description: {
-      ja: '人事管理システム。採用管理、勤怠管理、給与計算、パフォーマンス評価。',
-      en: 'HR management system with recruitment, attendance, payroll, and performance reviews.'
+    title: {
+      ja: 'ホームページ | 三菱ふそうトラック・バス株式会社',
+      en: 'Homepage | Mitsubishi Fuso Truck and Bus Corporation'
     },
-    technologies: ['React', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
+    description: {
+      ja: '三菱ふそうの公式サイトへようこそ。このサイトでは、プレスリリース、商品・カタログ情報、販売店情報、採用情報等などをご覧いただけます。',
+      en: 'Welcome to the official website of Mitsubishi Fuso. Here, you can find press releases, product and catalog information, dealer locations, career opportunities, and more.'
+    },
+    technologies: ['Wordpress', 'React', 'MySQL', 'TailwindCSS', 'JQuery'],
     field: 'enterprise',
     tags: ['HR', 'Enterprise', 'Automation'],
     role: {
       ja: 'バックエンド開発',
       en: 'Backend Development'
     },
-    demoUrl: 'https://example.com/hr-demo',
+    demoUrl: 'https://www.mitsubishi-fuso.com/ja/',
     image: hrSystemImage
   },
   {
     id: '24',
-    title: 'Energy Management Dashboard',
-    description: {
-      ja: 'エネルギー管理ダッシュボード。電力消費監視、コスト分析、省エネ提案。',
-      en: 'Energy management dashboard with consumption monitoring and cost analysis.'
+    title: {
+      ja: 'JoBinsエージェント登録 | JoBins',
+      en: 'JoBins Agent Registration | JoBins'
     },
-    technologies: ['React', 'Python', 'InfluxDB', 'Grafana', 'IoT'],
+    description: {
+      ja: '「JoBins（ジョビンズ）」は業界唯一、完全無料の求人データベースです。全国3000社以上の人材紹介会社が利用し、専属パートナーが貴社を紹介成功に導きます。',
+      en: '"JoBins" is the industry only completely free job database. Over 3,000 recruitment agencies across Japan use it, and dedicated partners help guide your company to successful placements.'
+    },
+    technologies: ['Vue.js', 'TypeScript', 'JQuery', 'Nginx', 'AWS'],
     field: 'other',
     tags: ['IoT', 'Data Visualization', 'Green Tech'],
     role: {
       ja: 'フロントエンド開発',
       en: 'Frontend Development'
     },
-    demoUrl: 'https://example.com/energy-demo',
+    demoUrl: 'https://agent.jobins.com/',
     image: energyManagementImage
   },
   {
     id: '25',
-    title: 'Pharmacy Management System',
-    description: {
-      ja: '薬局管理システム。処方箋管理、在庫管理、患者情報管理、薬剤相互作用チェック。',
-      en: 'Pharmacy management system with prescription management and drug interaction checks.'
+    title: {
+      ja: '【公式】福岡市平尾の痛くない歯医者さん「デンタルケア平尾」',
+      en: 'Official – Painless Dental Clinic in Hirao, Fukuoka: “Dental Care Hirao”'
     },
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'FHIR', 'Docker'],
+    description: {
+      ja: '福岡市平尾の痛くない歯医者さん「デンタルケア平尾」ではマイクロスコープを使用なるべく削らない歯科治療・予防を認定歯科衛生士がサポート。歯を白くするホワイトニングや歯列矯正でお困りの方も審美歯科の当院へ',
+      en: 'At Dental Care Hirao in Fukuoka’s Hirao area, we provide gentle, minimally invasive dental treatments using a microscope, supported by certified dental hygienists. We also offer cosmetic dentistry services, including teeth whitening and orthodontics, for those seeking a brighter smile or improved dental alignment.'
+    },
+    technologies: ['Wordpress', 'PHP', 'MySQL', 'Nginx'],
     field: 'medical',
     tags: ['Healthcare', 'Pharmacy', 'Compliance'],
     role: {
       ja: 'フルスタック開発',
       en: 'Full-stack Development'
     },
-    demoUrl: 'https://example.com/pharmacy-demo',
+    demoUrl: 'https://dentalcare-hirao.com/',
     image: pharmacyImage
   }
 ];

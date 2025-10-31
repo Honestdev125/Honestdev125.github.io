@@ -109,14 +109,14 @@ export const Projects = () => {
               <div className="aspect-video bg-muted overflow-hidden">
                 <img
                   src={project.image}
-                  alt={project.title}
+                  alt={typeof project.title === 'string' ? project.title : project.title[language]}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
               </div>
 
               <CardHeader className="p-4 sm:p-6">
                 <CardTitle className="text-lg sm:text-xl group-hover:text-primary transition-colors duration-300">
-                  {project.title}
+                  {typeof project.title === 'string' ? project.title : project.title[language]}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 sm:space-y-4 p-4 sm:p-6 pt-0">
@@ -138,32 +138,6 @@ export const Projects = () => {
                   )}
                 </div>
 
-                {/* Role */}
-                {project.role && (
-                  <p className="text-[10px] sm:text-xs text-accent font-medium">
-                    {project.role[language]}
-                  </p>
-                )}
-
-                {/* Links */}
-                <div className="flex gap-2 pt-1 sm:pt-2" onClick={(e) => e.stopPropagation()}>
-                  {project.demoUrl && (
-                    <Button size="sm" variant="outline" className="flex-1 text-xs hover:scale-105 transition-all duration-300" asChild>
-                      <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                        {content[language].demo}
-                      </a>
-                    </Button>
-                  )}
-                  {project.sourceUrl && (
-                    <Button size="sm" variant="outline" className="flex-1 text-xs hover:scale-105 transition-all duration-300" asChild>
-                      <a href={project.sourceUrl} target="_blank" rel="noopener noreferrer">
-                        <Code className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                        {content[language].source}
-                      </a>
-                    </Button>
-                  )}
-                </div>
               </CardContent>
             </Card>
           ))}

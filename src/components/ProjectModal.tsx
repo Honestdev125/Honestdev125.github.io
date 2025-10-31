@@ -30,7 +30,6 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
     },
     en: {
       techStack: 'Tech Stack',
-      role: 'Role',
       architecture: 'Architecture',
       frontend: 'Frontend',
       backend: 'Backend',
@@ -46,7 +45,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-card border-border">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-primary">
-            {project.title}
+            {typeof project.title === 'string' ? project.title : project.title[language]}
           </DialogTitle>
         </DialogHeader>
 
@@ -55,7 +54,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
           <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-border">
             <img
               src={project.image}
-              alt={project.title}
+              alt={typeof project.title === 'string' ? project.title : project.title[language]}
               className="w-full h-full object-cover"
             />
           </div>
@@ -81,17 +80,6 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
             </div>
           </div>
 
-          {/* Role */}
-          {project.role && (
-            <div>
-              <h3 className="text-lg font-semibold mb-3 text-foreground">
-                {content[language].role}
-              </h3>
-              <p className="text-accent font-medium">
-                {project.role[language]}
-              </p>
-            </div>
-          )}
 
           {/* Links */}
           <div className="flex gap-3 pt-4">

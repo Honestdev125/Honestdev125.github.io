@@ -151,16 +151,16 @@ export const Contact = () => {
                 </h3>
                 <div className="space-y-3 sm:space-y-4">
                   <a
-                    href="mailto:honestdev125@example.com"
+                    href="mailto:honestdev7@gmail.com"
                     className="flex items-center gap-2 sm:gap-3 text-muted-foreground hover:text-primary transition-all duration-300 group"
                   >
                     <div className="p-2 bg-secondary rounded-lg group-hover:bg-primary/10 transition-all duration-300 group-hover:scale-110">
                       <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
                     </div>
-                    <span className="text-xs sm:text-base">honestdev125@example.com</span>
+                    <span className="text-xs sm:text-base">Gmail</span>
                   </a>
                   <a
-                    href="#"
+                    href="https://chatwork.com"
                     className="flex items-center gap-2 sm:gap-3 text-muted-foreground hover:text-primary transition-all duration-300 group"
                   >
                     <div className="p-2 bg-secondary rounded-lg group-hover:bg-primary/10 transition-all duration-300 group-hover:scale-110">
@@ -179,13 +179,18 @@ export const Contact = () => {
                 </h3>
                 <div className="flex gap-2 sm:gap-3">
                   <Button variant="outline" size="icon" className="hover:border-primary hover:scale-110 transition-all duration-300">
-                    <Github className="h-4 w-4 sm:h-5 sm:w-5" />
+                    <a href="https://github.com/honestdev125" 
+                      className="hover:text-primary transition-all duration-300 group"
+                    >
+                      <Github className="h-4 w-4 sm:h-5 sm:w-5"/>
+                    </a>
                   </Button>
                   <Button variant="outline" size="icon" className="hover:border-primary hover:scale-110 transition-all duration-300">
+                  <a href="https://linkedin.com" 
+                      className="hover:text-primary transition-all duration-300 group"
+                    >
                     <Linkedin className="h-4 w-4 sm:h-5 sm:w-5" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="hover:border-primary hover:scale-110 transition-all duration-300">
-                    <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5" />
+                    </a>
                   </Button>
                 </div>
               </CardContent>
